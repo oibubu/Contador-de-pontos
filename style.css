@@ -1,0 +1,73 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto Mono", monospace;
+  min-height: 400px;
+  background-color: #111;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+h1 {
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  color: white;
+}
+p{
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  color: white;
+}
+table {
+  margin: 5%;
+  width: 90%;
+  border: 2px solid white;
+  border-collapse: collapse;
+}
+.tableStyle button {
+  border: 0;
+  color: #ffffff;
+  background: #747474;
+  font-weight: bold;
+  padding: 4px 5px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+}
+th,tr,td {
+  border: solid 1px white;
+  color: white;
+}
+.box {
+  margin-top: 50px;
+  text-align: center;
+}
+.tableStyle button:hover {
+  opacity: 0.5;
+}
+.radio {
+ margin-left: 400px;
+}
+label{
+  margin: 5px;
+  color: white;
+}
+div{
+  text-align: center;
+}
+.classeBotao{
+  width: 60px;
+  margin: 10px;
+}
+.pClassContainer{
+  text-align: center;
+  margin: 10px;
+  color: white;
+}

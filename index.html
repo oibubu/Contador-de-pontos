@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placar de pontos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="pontoLimite">
+        <h1 id="titulo">Tabela de pontos</h1>
+        <p class="pClassContainer"><input type="radio" name="limitePontos" id="10" checked>
+        <label for="10">Limite de 10 pontos!</label></p>
+
+        <p class="pClassContainer"><input type="radio" name="limitePontos" id="20">
+        <label for="20">Limite de 20 pontos!</label></p>
+
+        <p class="pClassContainer"><input type="radio" name="limitePontos" id="30">
+        <label for="30">Limite de 30 pontos!</label></p>
+
+        <input type="button" value="Iniciar" onclick="iniciarJogo()" class='classeBotao' id="iniciarBotao">
+    </div>
+    <div id="tabelaJogo" hidden>
+        <h1>Pontuação dos jogadores</h1>
+        <table>
+            <thead>
+                <th>Nome</th>
+                <th>Vitórias</th>
+                <th>Empates</th>
+                <th>Derrotas</th>
+                <th>Pontos</th>
+            </thead>
+            <tbody id="tabelaJogadores" class="tableStyle"></tbody>
+        </table>
+    </div>
+</body>
+<div id="resultadoJogo"></div>
+<script src="scriptfunction.js"></script>
+<script src="script.js"></script>
+</html>
