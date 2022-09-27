@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de pontos</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <main>
+
+        <div id="pontoLimite">
+            <h1>Tabela de pontos</h1>
+            <h2>Com quantos pontos o jogo deve terminar? <input type="number" name="limitePontos" id="limitePontos"></h2>
+            <input type="button" value="Iniciar" class='classeBotao' onclick="iniciarJogo()">
+        </div>
+
+        <div id="jogadores" hidden>
+            <h1>Quais são o nome dos jogadores?</h1>
+            <p><input type="text" name="nomeJogadores" id="nomeJogadores">
+            <input type="button" value="Adicionar" onclick="adicionarJogador()" class='classeBotao'>
+            <input type="button" value="Iniciar" onclick="mostrarTabela()" class='classeBotao'></p>
+        </div>
+
+        <div id="tabelaJogo" hidden = true>
+            <h1>Pontuação dos jogadores</h1>
+            <table>
+                <thead>
+                    <th>Nome</th>
+                    <th>Vitórias</th>
+                    <th>Empates</th>
+                    <th>Derrotas</th>
+                    <th>Pontos</th>
+                </thead>
+                <tbody id="tabelaJogadores" class="tableStyle"></tbody>
+            </table>
+            <input type="button" value="Voltar" onclick="voltarParaAdicao()" class='classeBotao'>
+            <input type="button" value="Resetar" onclick="resetarPontos()" class='classeBotao'>
+        </div>
+
+        <div id="resultadoJogo"></div>
+
+    </main>
+</body>
+<script src="scriptfunction.js"></script>
+</html>
